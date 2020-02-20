@@ -1,0 +1,4 @@
+============[image build]===========
+docker build --rm -t discover_eureka_image .
+============[image run]===========
+docker run -d --name="discover_eureka" -p 18761:8761 discover_eureka_image
