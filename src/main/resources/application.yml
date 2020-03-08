@@ -12,3 +12,5 @@ eureka:
 spring:
   application:
     name: discover-eureka-server
+logging:
+  file: /Volumes/DYZ-document/Program/X-CodeRunSpace/log/discoverservice/discover-eureka.log
