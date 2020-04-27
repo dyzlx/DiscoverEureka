@@ -5,8 +5,8 @@ eureka:
     hostname: ${spring.cloud.client.ip-address}
   client:
     #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false # 是否要将自己作为客户端注册到Eureka Server, 注册中心集群部署时，此选项需要打开，因为各个eureka实例需要相互注册
+    fetchRegistry: false # 是否检索服务选项，注册中心不负责检索服务
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 spring:
